@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container{
+  min-height: 100vh;
+  position: relative;
+}
+
+.first {
+  background: url('img/first_fox.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.second {
+  background: url('img/second_fox.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.third {
+  background: url('img/third_fox.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.fourth {
+  background: url('img/fourth_fox.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container_filter {
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgba(196,0,156,.2), rgba(156,0,196,.2));
+}
+
+.box {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+}
+
+.box_text {
+  font-size: 36px;
+  line-height: 60px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.article {
+  background: #000000;
+  padding: 60px;
+}
+
+.article p {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.article h2 {
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.footer {
+  background-color: #000000;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer img {
+  width: 20px;
+}
+
+.recolor {
+  color: #A02223;
+  font-weight: bold;
+  letter-spacing: .1em;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.recolor:hover{
+  color: #FFFFFF;
+}
+
+@keyframes animate{
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+#btn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 50px; 
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  animation-duration: 1.2s;
+}
+
+.bi-caret-up-square {
+  color: #A02223;
+  font-size: 48px;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.bi-caret-up-square:hover {
+  color: #FFF;
+}
+
+@media screen and (max-width: 966px) {
+  .bi-caret-up-square {
+    font-size: 32px;
+  }
+
+  #btn {
+    bottom: 15px;
+    right: 25px; 
+  }
+}
+
+@media screen and (max-width: 566px) {
+  .box_text {
+    font-size: 48px;
+  }
+}
